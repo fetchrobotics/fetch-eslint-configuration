@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-fetch",
+  "name": "eslint-config-fetchrobotics",
   "version": "1.0.0",
   "description": "The one and only fetch ESLint Configuration specification used for all projects.",
   "main": "index.js",

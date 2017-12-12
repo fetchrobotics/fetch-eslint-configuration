@@ -3,17 +3,17 @@ The one and only fetch ESLint Configuration specification used for all projects.
 
 # Usage
 
-1. Add `"eslint-config-fetch": "git@github.com:fetchrobotics/fetch-eslint-configuration.git#<tag>"` to `package.json`
+1. Add `"eslint-config-fetchrobotics": "git@github.com:fetchrobotics/fetch-eslint-configuration.git#<tag>"` to `package.json`
 
    Note: We recommend to use exact version (e.g. 1.0.0)
 
 2. Create ESLint config file (e.g. `.eslintrc`)
 
-3. Add `extends` option with value `fetch` (eslint-config-**fetch**)
+3. Add `extends` option with value `fetchrobotics` (eslint-config-**fetchrobotics**)
 
 ```json
 {
-    "extends": "fetch"
+    "extends": "fetchrobotics"
 }
 ```
 
