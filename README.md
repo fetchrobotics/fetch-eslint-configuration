@@ -24,4 +24,4 @@ You could use `npm link` to be able to use local repository in development (with
 
 Run `npm link` in this package directory then run `npm link eslint-config-fetch` in the root directory of the app which should use this config.
 
-To unlink module from local repository run `npm unlink eslint-config-fetch` in the app directory.
+To unlink module from local repository run `npm install` in the app directory.
