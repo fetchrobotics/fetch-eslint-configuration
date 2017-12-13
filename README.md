@@ -7,9 +7,11 @@ The one and only fetch ESLint Configuration specification used for all projects.
 
    Note: We recommend to use exact version (e.g. 1.0.0)
 
-2. Create ESLint config file (e.g. `.eslintrc`)
+2. Add modules lister under `peerDependencies` of this repo into your project `devDependencies`
 
-3. Add `extends` option with value `fetchrobotics` (eslint-config-**fetchrobotics**)
+3. Create ESLint config file (e.g. `.eslintrc`)
+
+4. Add `extends` option with value `fetchrobotics` (eslint-config-**fetchrobotics**)
 
 ```json
 {
@@ -17,7 +19,7 @@ The one and only fetch ESLint Configuration specification used for all projects.
 }
 ```
 
-4. Change rules severity or override options for rules from base configurations if needed ([details](https://eslint.org/docs/user-guide/configuring#extending-configuration-files))
+5. Change rules severity or override options for rules from base configurations if needed ([details](https://eslint.org/docs/user-guide/configuring#extending-configuration-files))
 
 # Development
 You could use `npm link` to be able to use local repository in development (without a necessity to publish new version to see changes all the time) - [details](https://docs.npmjs.com/cli/link);
@@ -25,3 +27,10 @@ You could use `npm link` to be able to use local repository in development (with
 Run `npm link` in this package directory then run `npm link eslint-config-fetch` in the root directory of the app which should use this config.
 
 To unlink module from local repository run `npm install` in the app directory.
+
+# Test
+To test that this configuration works correctly
+
+1. Install all modules lister under `peerDependencies`
+
+2. Run `npm test` - it should start lint script
