@@ -8,15 +8,15 @@ module.exports = {
     root: true,
     parser: 'babel-eslint',
     parserOptions: {
-        'ecmaVersion': 6
+        'ecmaVersion': 6,
     },
     extends: [
         'react-app',
-        'plugin:react/recommended'
+        'plugin:react/recommended',
     ],
     plugins: [
         'react',
-        'brackets'
+        'brackets',
     ],
     globals: {
         'jest': false,
@@ -48,7 +48,7 @@ module.exports = {
             'objects': 'always-multiline',
             'imports': 'always-multiline',
             'exports': 'always-multiline',
-            'functions': 'always-multiline'
+            'functions': 'always-multiline',
         }],
         'semi': ['error', 'never'],
         'no-extra-semi': 'error',
@@ -91,13 +91,13 @@ module.exports = {
         'jsx-a11y/anchor-has-content': 'off',
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/href-no-hash': 'off',
-        'no-use-before-define': ['error', { 'functions': false }]
+        'no-use-before-define': ['error', { 'functions': false }],
     },
     settings: {
         'import/resolver': {
             node: {
-                paths: [ './src' ]
-            }
-        }
-    }
-};
+                paths: [ './src' ],
+            },
+        },
+    },
+}
