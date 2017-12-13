@@ -4,7 +4,7 @@
   "description": "The one and only fetch ESLint Configuration specification used for all projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint -c './index.js' --max-warnings 0 'index.js'"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,15 @@
     "eslint"
   ],
   "author": "Fetch Robotics Inc",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^4.13.1",
+    "babel-eslint": "^8.0.3",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-brackets": "^0.1.3",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1"
+  }
 }
