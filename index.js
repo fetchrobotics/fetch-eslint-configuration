@@ -38,6 +38,7 @@ module.exports = {
         'no-loop-func': 'error',
         'no-duplicate-imports': 'error',
         'import/no-duplicates': 'error',
+        'import/no-unresolved': 'error',
         'import/extensions': ['error', 'never', { 'svg': 'always', 'css': 'always' }],
         'prefer-arrow-callback': 'off',
         'func-names': 'off',
@@ -53,7 +54,7 @@ module.exports = {
         }],
         'semi': ['error', 'never'],
         'no-extra-semi': 'error',
-        'class-property/class-property-semicolon': ["error", "never"],
+        'class-property/class-property-semicolon': ['error', 'never'],
         'no-unexpected-multiline': 'error',
         'new-cap': 'off',
         'prefer-template': 'off',
@@ -95,11 +96,16 @@ module.exports = {
         'jsx-a11y/href-no-hash': 'off',
         'no-use-before-define': ['error', { 'functions': false }],
     },
-    settings: {
+    'settings': {
         'import/resolver': {
-            node: {
-                paths: [ './src' ],
-            },
-        },
-    },
+            'node': {
+                'paths': ['./src'],
+                'extensions': [
+                    '.js',
+                    '.jsx',
+                    '.json'
+                ]
+            }
+        }
+    }
 }
