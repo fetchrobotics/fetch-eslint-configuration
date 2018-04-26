@@ -95,6 +95,7 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/href-no-hash': 'off',
         'no-use-before-define': ['error', { 'functions': false }],
+        'no-unused-vars': ['error', { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
     },
     'settings': {
         'import/resolver': {
