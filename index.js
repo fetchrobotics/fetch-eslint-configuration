@@ -96,6 +96,12 @@ module.exports = {
         'jsx-a11y/href-no-hash': 'off',
         'no-use-before-define': ['error', { 'functions': false }],
         'no-unused-vars': ['error', { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
+        'key-spacing': 'error',
+        'spaced-comment': 'error',
+        'space-before-blocks': 'error',
+        'arrow-spacing': 'error',
+        'no-whitespace-before-property': 'error',
+        'object-curly-spacing': ['error', 'always', { 'objectsInObjects': true }],
     },
     'settings': {
         'import/resolver': {
