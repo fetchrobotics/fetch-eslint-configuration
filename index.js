@@ -77,6 +77,12 @@ module.exports = {
         'react/no-unused-prop-types': 'off',
         'react/forbid-prop-types': 'off',
         'react/display-name': 'warn',
+        'react/jsx-tag-spacing': ['error', {
+            'closingSlash': 'never',
+            'afterOpening': 'never',
+            'beforeClosing': 'never',
+            'beforeSelfClosing': 'always',
+        }],
         'arrow-body-style': 'off',
         'arrow-parens': ['error', 'always'],
         'no-underscore-dangle': 'error',
