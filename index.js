@@ -108,6 +108,13 @@ module.exports = {
         'arrow-spacing': 'error',
         'no-whitespace-before-property': 'error',
         'object-curly-spacing': ['error', 'always', { 'objectsInObjects': true }],
+        'space-infix-ops': ['error', { 'int32Hint': true }],
+        'brace-style': ['error', '1tbs', { "allowSingleLine": true }],
+        'newline-per-chained-call': 'error',
+        'curly': 'error',
+        'multiline-ternary': ['error', 'always-multiline'],
+        'space-in-parens': 'error',
+        'switch-colon-spacing': 'error',
     },
     'settings': {
         'import/resolver': {
