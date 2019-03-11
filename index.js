@@ -17,7 +17,6 @@ module.exports = {
     plugins: [
         'react',
         'brackets',
-        'class-property',
     ],
     globals: {
         'jest': false,
@@ -54,7 +53,6 @@ module.exports = {
         }],
         'semi': ['error', 'never'],
         'no-extra-semi': 'error',
-        'class-property/class-property-semicolon': ['error', 'never'],
         'no-unexpected-multiline': 'error',
         'new-cap': 'off',
         'prefer-template': 'off',
